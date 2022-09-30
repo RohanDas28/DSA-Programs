@@ -1,0 +1,13 @@
+a = input("Press 1 to convert Celsius to Fahrenheit or 2 to convert Fahrenheit to Celsius: ")
+
+if a == "1":
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = (celsius * 1.8) + 32
+    print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+elif a == "2":
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = (fahrenheit - 32) / 1.8
+    print('%0.1f degree Fahrenheit is equal to %0.1f degree Celsius' %(fahrenheit,celsius))
+else:
+    print("Wrong input")
+    
