@@ -2,9 +2,7 @@ from random import random
 import string
 import random
 
-def choose_between(letters,u,l,d,p):
-
-    pass
+print("Welcome to The Password Generator !!!")
 
 def raw_data():
     letters = string.ascii_letters
@@ -16,7 +14,7 @@ def raw_data():
     passwd_size = random.randint(10,20)
 
     passwd = "".join(random.choices(letters+upper_case+lower_case+digits+hex+punctuation,k=passwd_size))
-    print(passwd)
+    print("Here is your password : "+ passwd)
 
     
 
